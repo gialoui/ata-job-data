@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "8d3199c2-0e45-441a-8702-c16e7fe1e982",
+		"name": "ATA Job Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1813499"
+	},
+	"item": [
+		{
+			"name": "Query Job Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/job-data?fields=GENDER,SALARY,JOB_TITLE&salaryGte=40000&salaryLte=46000&sort=jobTitle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job-data"
+					],
+					"query": [
+						{
+							"key": "jobTitle",
+							"value": "Full Stack",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "gender,desc",
+							"disabled": true
+						},
+						{
+							"key": "fields",
+							"value": "GENDER,SALARY,JOB_TITLE",
+							"description": "A list of field enums separated by comma"
+						},
+						{
+							"key": "salaryGte",
+							"value": "40000",
+							"description": "Lower bound for filtering salary"
+						},
+						{
+							"key": "salaryLte",
+							"value": "46000",
+							"description": "Upper bound for filtering salary"
+						},
+						{
+							"key": "salary",
+							"value": "18000",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "jobTitle"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
