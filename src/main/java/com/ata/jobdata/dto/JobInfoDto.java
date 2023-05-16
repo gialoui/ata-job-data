@@ -1,10 +1,12 @@
 package com.ata.jobdata.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class JobInfoDto {
     private LocalDateTime timestamp;
     private String employer;

@@ -16,6 +16,10 @@ public interface JobInfoMapper {
     JobInfoDto toDto(JobInfo entity);
 
     default String formatSalary(Double salary) {
+        if (salary == null) {
+            return null;
+        }
+        
         NumberFormat format = NumberFormat.getCurrencyInstance(Locale.US);
         return format.format(salary);
     }
