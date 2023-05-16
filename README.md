@@ -61,6 +61,9 @@ Using the Maven command-line tool:
 ## What to improve
 
 - Unit tests
+- Support more formats of salary and gender
 - Allow pagination
 - Spring Batch to read and process the file by batch of 10 or 20. Find the perfect number of items as you implement and
   test it by yourself.
+
+### HAPPY TESTING EVERYONE!!!
