@@ -45,7 +45,7 @@ Using the Maven command-line tool:
 
 - Open a terminal or command prompt in the root directory of your Spring Boot project
 - Run the command mvn spring-boot:run
-- The Spring Boot application will start and you can access it at http://localhost:8080
+- The Spring Boot application will start, and you can access it at http://localhost:9000
 
 ## Things that were considered
 
